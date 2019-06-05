@@ -26,11 +26,6 @@
 
 <body>
 
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Satvik Cow's Milk</span>
-    <span class="site-heading-lower">Simply Desi</span>
-  </h1>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
@@ -40,32 +35,39 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto" id="top-menu">
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+            <a class="nav-link text-uppercase text-expanded" href="#home">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+            <a class="nav-link text-uppercase text-expanded" href="#benefits">Benefits</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="#about">About us</a>
           </li>
           <!-- <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+            <a class="nav-link text-uppercase text-expanded" href="#order">Order Now</a>
           </li> -->
-          <!-- <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="store.html">Store</a>
-          </li> -->
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="#contact">Contact Us</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="page-section clearfix">
+  
+  <h1 class="site-heading text-center text-white d-none d-lg-block" id="home">
+    <span class="site-heading-upper text-primary mb-3">Satvik Cow's Milk</span>
+    <span class="site-heading-lower">Simply Desi</span>
+  </h1>
+
+  <section class="page-section clearfix" id="home">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded"
-          src="https://media.istockphoto.com/photos/pouring-milk-in-the-glass-on-the-background-of-nature-picture-id535489242?k=6&m=535489242&s=612x612&w=0&h=xL35ZiKdAa_fF7Izz6E_7Q96e7Gw1An8x3TKFBuRiXQ="
-          alt="">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="./img/milk_glass.jpg" alt="">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
             <span class="section-heading-upper">Fresh Milk</span>
@@ -74,14 +76,15 @@
           <p class="mb-3">Satvik Cow’s milk offers pure Cow milk from Indian breed of cows!
           </p>
           <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#">Visit Us Today!</a>
+            <a class="btn btn-primary btn-xl" href="#contact">Visit Us Today!</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="page-section cta">
+
+  <section class="page-section cta" id="benefits">
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
@@ -106,7 +109,182 @@
     </div>
   </section>
 
-  <footer class="footer text-faded text-center py-5">
+  <section class="page-section about-heading">
+    <div class="container">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="./img/benefit1.jpg" alt="">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Benefits of</span>
+                <span class="section-heading-lower">Indian Breed of Cow’s milk</span>
+              </h2>
+              <p>A broad range of studies and investigations has shown following health benefits with Indian breed of
+                Cow’s milk (A2 milk) </br></br>
+                <ul>
+                  <li>Indian breed cows like Gir cow has only A2 beta casein protein in their milk. When Gir cow milk is
+                    consumed, the harmful BCM7 is not formed and thereby do not produce any harmful health conditions
+                    related to BCM7. Hence Gir cows are the source for safe and healthy milk.</li>
+                  <li>Excellent for children’s health and development</li>
+                  <li>It contains high amount of <strong>Vitamin A.</strong></li>
+                  <li><strong>Omega 3</strong> which is helpful in cleansing of Cholesterol.</li>
+                  <li>It prevents obesity, Thyroid, asthma, Migraine and bone joint pain problems.</li>
+                  <li>It’s beneficial in Heart Problems, Diabetes and Cancer.</li>
+                  <li>Plays vital role in <strong>muscle contraction</strong> and <strong>blood clotting</strong>.</li>
+                  <li>It regulates blood pressure. It improves memory of children. Helps
+                    in <strong>Detoxification</strong>.</li>
+                  <li>Reduces autistic symptoms</li>
+                  <li>Reduces schizophrenic symptoms</li>
+                  <li>Reduces incidence of cardiovascular disease</li>
+                  <li>Reduces type-1 diabetes incidences</li>
+                  <li>Reduces neurological disorders viz behavioural disturbances, endocrine disfunction (diabetes,
+                    endometritis etc)</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="page-section about-heading" id="about">
+    <div class="container">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" width="1600px" src="./img/benefit2.jpg" alt="">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Best Milk, Best Roots</span>
+                <span class="section-heading-lower">About Us and Why Us</span>
+              </h2>
+              <p>Satvik Cow’s milk offers pure Cow milk from Indian breed of cows. </br></br>
+                What makes us different and preferred is our love towards nature that reflects in our product. Our cows
+                do not live in the farm rather they live in the village with villagers like their family member and live
+                freely and happily in a natural condition. Milk extracted from cows are purely in traditional style. We
+                collect milk from home to home and make it freshly available to your home on the same day. Village is
+                located close to Pune which has only Indian breed of cows. </br></br>
+                Satvik is a reflection of our passion for milk. Milk captures the imagination, sparks interest and
+                ideas, adds colour and flavour, and makes us feel fulfilled and happy. We believe in the significant
+                part played by milk, strengthening and protecting the body and mind to live a fuller, more complete life
+                each day. We know that cow’s milk at its best represents the pinnacle of nutrition and health!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order" class="page-section cta d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <!-- <span class="section-heading-upper">Our Promise</span> -->
+              <span class="section-heading-lower">Order Now</span>
+            </h2>
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon
+                as possible!</p>
+              <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+              <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+              <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+              <form name="sentMessage" id="contactForm" novalidate="" class="text-left">
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Name" id="name" required=""
+                      data-validation-required-message="Please enter your name." aria-invalid="false">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Email Address" id="email" required=""
+                      data-validation-required-message="Please enter your email address.">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label>Phone Number</label>
+                    <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required=""
+                      data-validation-required-message="Please enter your phone number." aria-invalid="false">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="form-group floating-label-form-group controls">
+                    <label>Message</label>
+                    <textarea rows="5" class="form-control" placeholder="Message" id="message" required=""
+                      data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p id="contact"></p>
+  <section class="page-section cta delivery">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="section-heading mb-4 text-center">
+            <span class="section-heading-lower light">Same Day Delivery</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="marqueeSection" style="opacity: .9">
+      <img src="./img/village.png" />
+      <img src="./img/cow.png" />
+      <marquee direction="right" width="90%" scrollamount="10" behavior="scroll">
+        <img class="truck" src="./img/truck.png" />
+      </marquee>
+      <img class="home" src="./img/building.png" />
+    </div>
+  </section>
+
+  <section class="bg-faded rounded p-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Let's Get In Touch!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5"> Give us a call or send us an email and we
+            will get back to you as soon as possible!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <a href="tel:+919579740519">+91 9579740519</a>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="mailto:ascendermarketing@gmail.com?subject = Enquiry&body = Message">
+            ascendermarketing@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer text-faded text-center">
     <div class="container">
       <p class="m-0 small">Copyright &copy; Anup Kumar</p>
     </div>
@@ -115,7 +293,42 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
 
 </body>
 
 </html>
+
+<style>
+  .delivery {
+    background-image: url('http://www.pngmart.com/files/5/City-PNG-Pic.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 8rem;
+    padding-bottom: 0;
+    background-color: transparent;
+    color: #efefef;
+  }
+
+  .marqueeSection {
+    position: relative;
+  }
+
+  .delivery img {
+    width: 20%;
+    max-width: 150px;
+  }
+
+  marquee {
+    position: absolute;
+    bottom: 0;
+    left: 5%
+  }
+
+  .delivery .home {
+    position: absolute;
+    right: -10px;
+    bottom: -30px;
+    max-width: 200px;
+  }
+</style>

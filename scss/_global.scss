@@ -1,7 +1,7 @@
 body {
   @include body-font;
   // background: linear-gradient(rgba(47, 23, 15, 0.65)), url('../img/bg.jpg');
-  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("https://cdn1.medicalnewstoday.com/content/images/articles/323/323073/dairy-products.jpg");
+  background: linear-gradient(rgba(47, 23, 15, 0.65));
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

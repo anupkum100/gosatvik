@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Lora';
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("https://cdn1.medicalnewstoday.com/content/images/articles/323/323073/dairy-products.jpg");
-  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("https://cdn1.medicalnewstoday.com/content/images/articles/323/323073/dairy-products.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, 0.65))), url("https://saveindiancows.org/wp-content/uploads/2018/09/A2-milk-from-Indian-cows.jpg");
+  background: linear-gradient(rgba(47, 23, 15, 0.65)), url("https://saveindiancows.org/wp-content/uploads/2018/09/A2-milk-from-Indian-cows.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -76,8 +76,12 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(47, 23, 15, 0.5);
   font-family: 'Raleway';
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
 }
 
 #mainNav .navbar-brand {
