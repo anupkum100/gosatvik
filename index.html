@@ -28,7 +28,8 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
+      <img class="logo" src="./img/logo_small.png"/>
+    <div class="container text-center">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">GoSatvik</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,10 +43,10 @@
             </a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="#benefits">Benefits</a>
+            <a class="nav-link text-uppercase text-expanded" href="#about">About us</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="#about">About us</a>
+            <a class="nav-link text-uppercase text-expanded" href="#benefits">Benefits</a>
           </li>
           <!-- <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="#order">Order Now</a>
@@ -58,9 +59,9 @@
     </div>
   </nav>
 
-  
+
   <h1 class="site-heading text-center text-white d-none d-lg-block" id="home">
-    <span class="site-heading-upper text-primary mb-3">Satvik Cow's Milk</span>
+    <span class="site-heading-upper text-primary">Satvik Cow's Milk</span>
     <span class="site-heading-lower">Simply Desi</span>
   </h1>
 
@@ -83,6 +84,33 @@
     </div>
   </section>
 
+  <section id="about" class="page-section about-heading" id="about">
+    <div class="container">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" width="1600px" src="./img/benefit2.jpg" alt="">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Best Milk, Best Roots</span>
+                <span class="section-heading-lower">About Us and Why Us</span>
+              </h2>
+              <p>Satvik Cow’s milk offers pure Cow milk from Indian breed of cows. </br></br>
+                What makes us different and preferred is our love towards nature that reflects in our product. Our cows
+                do not live in the farm rather they live in the village with villagers like their family member and live
+                freely and happily in a natural condition. Milk extracted from cows are purely in traditional style. We
+                collect milk from home to home and make it freshly available to your home on the same day. Village is
+                located close to Pune which has only Indian breed of cows. </br></br>
+                Satvik is a reflection of our passion for milk. Milk captures the imagination, sparks interest and
+                ideas, adds colour and flavour, and makes us feel fulfilled and happy. We believe in the significant
+                part played by milk, strengthening and protecting the body and mind to live a fuller, more complete life
+                each day. We know that cow’s milk at its best represents the pinnacle of nutrition and health!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="page-section cta" id="benefits">
     <div class="container">
@@ -142,34 +170,6 @@
                     endometritis etc)</li>
                 </ul>
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="page-section about-heading" id="about">
-    <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" width="1600px" src="./img/benefit2.jpg" alt="">
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Best Milk, Best Roots</span>
-                <span class="section-heading-lower">About Us and Why Us</span>
-              </h2>
-              <p>Satvik Cow’s milk offers pure Cow milk from Indian breed of cows. </br></br>
-                What makes us different and preferred is our love towards nature that reflects in our product. Our cows
-                do not live in the farm rather they live in the village with villagers like their family member and live
-                freely and happily in a natural condition. Milk extracted from cows are purely in traditional style. We
-                collect milk from home to home and make it freshly available to your home on the same day. Village is
-                located close to Pune which has only Indian breed of cows. </br></br>
-                Satvik is a reflection of our passion for milk. Milk captures the imagination, sparks interest and
-                ideas, adds colour and flavour, and makes us feel fulfilled and happy. We believe in the significant
-                part played by milk, strengthening and protecting the body and mind to live a fuller, more complete life
-                each day. We know that cow’s milk at its best represents the pinnacle of nutrition and health!</p>
             </div>
           </div>
         </div>
@@ -239,7 +239,7 @@
   </section>
 
   <p id="contact"></p>
-  <section class="page-section cta delivery">
+  <section class="cta delivery">
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
@@ -251,7 +251,8 @@
     </div>
     <div class="marqueeSection" style="opacity: .9">
       <img src="./img/village.png" />
-      <img src="./img/cow.png" />
+      <img class="grass" src="./img/grass.png"/>
+      <img class="cow_png" src="./img/cow.png" />
       <marquee direction="right" width="90%" scrollamount="10" behavior="scroll">
         <img class="truck" src="./img/truck.png" />
       </marquee>
@@ -259,7 +260,7 @@
     </div>
   </section>
 
-  <section class="bg-faded rounded p-5">
+  <section class="bg-faded p-5 contact-us">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
@@ -298,37 +299,3 @@
 </body>
 
 </html>
-
-<style>
-  .delivery {
-    background-image: url('http://www.pngmart.com/files/5/City-PNG-Pic.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-top: 8rem;
-    padding-bottom: 0;
-    background-color: transparent;
-    color: #efefef;
-  }
-
-  .marqueeSection {
-    position: relative;
-  }
-
-  .delivery img {
-    width: 20%;
-    max-width: 150px;
-  }
-
-  marquee {
-    position: absolute;
-    bottom: 0;
-    left: 5%
-  }
-
-  .delivery .home {
-    position: absolute;
-    right: -10px;
-    bottom: -30px;
-    max-width: 200px;
-  }
-</style>

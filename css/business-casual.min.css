@@ -10,7 +10,8 @@
 	background: linear-gradient(rgba(47, 23, 15, .65));
 	background-attachment: fixed;
 	background-position: center;
-	background-size: cover
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 h1,
@@ -45,9 +46,9 @@ p {
 }
 
 .site-heading .site-heading-lower {
-	font-size: 5rem;
+	font-size: 1rem;
 	font-weight: 100;
-	line-height: 4rem
+	line-height: 2rem
 }
 
 .page-section {
@@ -85,7 +86,8 @@ p {
 }
 
 #mainNav .navbar-brand {
-	color: #e6a756
+    color: #e6a756;
+    margin: auto
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -138,7 +140,12 @@ p {
 		left: 0;
 		position: absolute;
 		bottom: -2rem
-	}
+    }
+    .logo{
+        max-width: 40px;
+        position: absolute;
+        width: 10%;
+    }
 }
 
 @media (min-width:1200px) {
@@ -264,4 +271,62 @@ p {
 
 .font-weight-light {
 	font-weight: 100!important
+}
+
+.contact-us {
+    padding: 6rem !important;
+}
+
+/* custom css for delivery section starts*/
+.delivery {
+    background-image: url('http://www.pngmart.com/files/5/City-PNG-Pic.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 8rem;
+    padding-bottom: 0;
+    background-color: transparent;
+    color: #efefef;
+  }
+
+  .marqueeSection {
+    position: relative;
+  }
+
+  .delivery img {
+    width: 20%;
+    max-width: 150px;
+  }
+
+  marquee {
+    position: absolute;
+    bottom: 0;
+    left: 5%
+  }
+
+  .delivery .home {
+    position: absolute;
+    right: -10px;
+    bottom: -15%;
+    max-width: 200px;
+  }
+
+  .delivery .cow_png{
+      max-width: 80px;
+      vertical-align: bottom;
+  }
+
+  .delivery .grass{
+    min-width: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* custom css ends */
+
+  .logo{
+    max-width: 60px;
+    position: absolute;
+    width: 10%;
+    top: 10px;
 }
