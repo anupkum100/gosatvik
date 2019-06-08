@@ -10,6 +10,13 @@
 
   <title>GoSatvik</title>
 
+  <!-- Font Awesome Icons -->
+  <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/fontawesome-free/css/all.min.css"
+    rel="stylesheet" type="text/css">
+
+  <!-- title icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -28,7 +35,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-      <img class="logo" src="./img/logo_small.png"/>
+    <img class="logo" src="./img/logo.png" />
     <div class="container text-center">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">GoSatvik</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -61,14 +68,15 @@
 
 
   <h1 class="site-heading text-center text-white d-none d-lg-block" id="home">
-    <span class="site-heading-upper text-primary">Satvik Cow's Milk</span>
-    <span class="site-heading-lower">Simply Desi</span>
+    <span class="site-heading-upper text-primary">Satvik</span>
+    <span class="site-heading-lower">Cow's Milk and Dairy Products</span>
   </h1>
 
   <section class="page-section clearfix" id="home">
     <div class="container">
       <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="./img/milk_glass.jpg" alt="">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded asyncImage" src="./img/low/milk_glass.jpg" alt="Fresh Milk"
+          data-src="./img/milk_glass.jpg">
         <div class="intro-text left-0 text-center bg-faded p-5 rounded">
           <h2 class="section-heading mb-4">
             <span class="section-heading-upper">Fresh Milk</span>
@@ -77,7 +85,7 @@
           <p class="mb-3">Satvik Cow’s milk offers pure Cow milk from Indian breed of cows!
           </p>
           <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#contact">Visit Us Today!</a>
+            <a class="btn btn-primary btn-xl" id="visitus_btn">Visit Us Today!</a>
           </div>
         </div>
       </div>
@@ -86,25 +94,27 @@
 
   <section id="about" class="page-section about-heading" id="about">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" width="1600px" src="./img/benefit2.jpg" alt="">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0 asyncImage" width="1600px"
+        src="./img/low/benefit2.jpg" alt="Benefits" data-src="./img/benefit2.jpg">
       <div class="about-heading-content">
         <div class="row">
           <div class="col-xl-9 col-lg-10 mx-auto">
             <div class="bg-faded rounded p-5">
               <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Best Milk, Best Roots</span>
-                <span class="section-heading-lower">About Us and Why Us</span>
+                <!-- <span class="section-heading-upper">Best Milk, Best Roots</span> -->
+                <span class="section-heading-lower">About Us</span>
               </h2>
               <p>Satvik Cow’s milk offers pure Cow milk from Indian breed of cows. </br></br>
                 What makes us different and preferred is our love towards nature that reflects in our product. Our cows
                 do not live in the farm rather they live in the village with villagers like their family member and live
                 freely and happily in a natural condition. Milk extracted from cows are purely in traditional style. We
                 collect milk from home to home and make it freshly available to your home on the same day. Village is
-                located close to Pune which has only Indian breed of cows. </br></br>
+                located close to Pune which has only Indian breed of cows.</br></br>
                 Satvik is a reflection of our passion for milk. Milk captures the imagination, sparks interest and
                 ideas, adds colour and flavour, and makes us feel fulfilled and happy. We believe in the significant
                 part played by milk, strengthening and protecting the body and mind to live a fuller, more complete life
-                each day. We know that cow’s milk at its best represents the pinnacle of nutrition and health!</p>
+                each day. We know that cow’s milk at its best represents the pinnacle of nutrition and health!
+              </p>
             </div>
           </div>
         </div>
@@ -119,17 +129,16 @@
           <div class="cta-inner text-center rounded">
             <h2 class="section-heading mb-4">
               <!-- <span class="section-heading-upper">Our Promise</span> -->
-              <span class="section-heading-lower">OUR BENEFITS</span>
+              <span class="section-heading-lower">Why Satvik</span>
             </h2>
             <ul class="text-left">
-              <li>100% Natural</li>
-              <li>No additives or preservatives</li>
-              <li>Fresh Milk from Village to home </li>
-              <li>Same day delivery</li>
-              <li>Milk from only Indian breed of cows</li>
-              <li>Eco-friendly bottles</li>
-              <li>Best Quality Milk from healthy and happy cows </li>
-              </li>
+              <li>100% Natural.</li>
+              <li>No additives or preservatives.</li>
+              <li>Fresh Milk from Village to home .</li>
+              <li>Same day delivery.</li>
+              <li>Milk from only Indian breed of cows.</li>
+              <li>Eco-friendly bottles.</li>
+              <li>Best Quality Milk from healthy and happy cows.</li>
             </ul>
           </div>
         </div>
@@ -139,7 +148,8 @@
 
   <section class="page-section about-heading">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="./img/benefit1.jpg" alt="">
+      <img width="100%" class="img-fluid rounded about-heading-img mb-3 mb-lg-0 asyncImage" src="./img/low/benefit1.jpg"
+        alt="Benefits 2" data-src="./img/benefit1.jpg">
       <div class="about-heading-content">
         <div class="row">
           <div class="col-xl-9 col-lg-10 mx-auto">
@@ -149,25 +159,26 @@
                 <span class="section-heading-lower">Indian Breed of Cow’s milk</span>
               </h2>
               <p>A broad range of studies and investigations has shown following health benefits with Indian breed of
-                Cow’s milk (A2 milk) </br></br>
+                Cow’s milk (A2 milk).</br></br>
                 <ul>
                   <li>Indian breed cows like Gir cow has only A2 beta casein protein in their milk. When Gir cow milk is
                     consumed, the harmful BCM7 is not formed and thereby do not produce any harmful health conditions
                     related to BCM7. Hence Gir cows are the source for safe and healthy milk.</li>
-                  <li>Excellent for children’s health and development</li>
-                  <li>It contains high amount of <strong>Vitamin A.</strong></li>
-                  <li><strong>Omega 3</strong> which is helpful in cleansing of Cholesterol.</li>
+                  <li>Excellent for children’s health and development.</li>
+                  <li>It contains high amount of <strong title="Vitamin A is vital for growth and development, cell recognition, vision, immune function, and reproduction and helps the heart, lungs, and kidneys.">Vitamin A</strong>.</li>
+                  <li><strong title="Omega-3s are a family of essential fatty acids that play important roles in your body and may provide a number of health benefits">Omega 3</strong> which is helpful in cleansing of Cholesterol.</li>
                   <li>It prevents obesity, Thyroid, asthma, Migraine and bone joint pain problems.</li>
                   <li>It’s beneficial in Heart Problems, Diabetes and Cancer.</li>
-                  <li>Plays vital role in <strong>muscle contraction</strong> and <strong>blood clotting</strong>.</li>
+                  <li>Plays vital role in <strong title="Muscle contraction is the activation of tension-generating sites within muscle fibers.">Muscle contraction</strong> and <strong title="A blood clot is a clump of blood that has changed from a liquid to a gel-like or semisolid state. Clotting is a necessary process that can prevent you from losing too much blood in certain instances, such as when you’re injured or cut.">Blood clotting</strong>.</li>
                   <li>It regulates blood pressure. It improves memory of children. Helps
-                    in <strong>Detoxification</strong>.</li>
-                  <li>Reduces autistic symptoms</li>
-                  <li>Reduces schizophrenic symptoms</li>
-                  <li>Reduces incidence of cardiovascular disease</li>
-                  <li>Reduces type-1 diabetes incidences</li>
+                    in <strong title="Detoxification or detoxication is the physiological or medicinal removal of toxic substances from a living organism, including the human body, which is mainly carried out by the liver.">Detoxification</strong>.</li>
+                  <li>Reduces autistic symptoms.</li>
+                  <li>Reduces schizophrenic symptoms.</li>
+                  <li>Reduces incidence of cardiovascular disease.</li>
+                  <li>Reduces type-1 diabetes incidences.</li>
                   <li>Reduces neurological disorders viz behavioural disturbances, endocrine disfunction (diabetes,
-                    endometritis etc)</li>
+                    endometritis etc).</li>
+
                 </ul>
               </p>
             </div>
@@ -238,7 +249,6 @@
     </div>
   </section>
 
-  <p id="contact"></p>
   <section class="cta delivery">
     <div class="container">
       <div class="row">
@@ -250,17 +260,17 @@
       </div>
     </div>
     <div class="marqueeSection" style="opacity: .9">
-      <img src="./img/village.png" />
-      <img class="grass" src="./img/grass.png"/>
-      <img class="cow_png" src="./img/cow.png" />
+      <img src="./img/low/village.png" />
+      <img class="grass" src="./img/low/grass.png" />
+      <img class="cow_png" src="./img/low/cow.png" />
       <marquee direction="right" width="90%" scrollamount="10" behavior="scroll">
-        <img class="truck" src="./img/truck.png" />
+        <img class="truck" src="./img/low/truck.png" />
       </marquee>
-      <img class="home" src="./img/building.png" />
+      <img class="home" src="./img/low/building.png" />
     </div>
   </section>
 
-  <section class="bg-faded p-5 contact-us">
+  <section class="bg-faded p-5 contact-us" id="contact">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
@@ -273,16 +283,28 @@
       <div class="row">
         <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
           <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <a href="tel:+919579740519">+91 9579740519</a>
+          <div>
+            <a href="tel:+917666840066">+91 7666840066</a>
+          </div>
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
           <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:ascendermarketing@gmail.com?subject = Enquiry&body = Message">
-            ascendermarketing@gmail.com</a>
+          <div>
+            <a class="d-block" href="mailto:satvikmilk.products@gmail.com?subject = Enquiry&body = Message">
+              satvikmilk.products@gmail.com</a>
+          </div>
         </div>
       </div>
     </div>
+    <div id="top_btn"><i class="top"></i></div>
+  </section>
+
+  <section id="visitus">
+    <div class="mapouter">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4809.631151671296!2d73.77875816970908!3d18.56102010115275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bff582038b89%3A0xf102266cb9221e1a!2sSatvik+Cow&#39;s+Milk+and+Dairy+Products!5e0!3m2!1sen!2sin!4v1559999078649!5m2!1sen!2sin"
+        width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 
   <footer class="footer text-faded text-center">

@@ -5,7 +5,8 @@
  */
 
  body {
-	font-family: Lora;
+    /* font-family: Lora; */
+    font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, .65)));
 	background: linear-gradient(rgba(47, 23, 15, .65));
 	background-attachment: fixed;
@@ -78,7 +79,7 @@ p {
 
 #mainNav {
     background-color: rgba(47, 23, 15);
-    font-family: Raleway;
+    font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     position: fixed;
     width: 100%;
     top: 0;
@@ -162,7 +163,7 @@ p {
 
 .cta .cta-inner {
 	position: relative;
-	padding: 3rem;
+	padding: 1rem;
 	margin: .5rem;
 	background-color: rgba(255, 255, 255, .85)
 }
@@ -237,7 +238,8 @@ p {
 }
 
 .contact-us a {
-	position: relative
+    position: relative;
+    color: #f4623a
 }
 
 .footer {
@@ -274,7 +276,7 @@ p {
 }
 
 .contact-us {
-    padding: 6rem !important;
+    padding: 8rem 0 !important;
 }
 
 /* custom css for delivery section starts*/
@@ -295,6 +297,7 @@ p {
   .delivery img {
     width: 20%;
     max-width: 150px;
+    z-index: 1;
   }
 
   marquee {
@@ -305,14 +308,16 @@ p {
 
   .delivery .home {
     position: absolute;
-    right: -10px;
+    right: 0;
     bottom: -15%;
     max-width: 200px;
+    z-index: -1;
   }
 
   .delivery .cow_png{
       max-width: 80px;
       vertical-align: bottom;
+      width: 10%;
   }
 
   .delivery .grass{
@@ -325,8 +330,49 @@ p {
   /* custom css ends */
 
   .logo{
-    max-width: 60px;
     position: absolute;
-    width: 10%;
-    top: 10px;
-}
+    top: 0px;
+    max-width: 140px;
+    width: 14%;
+    left: 5px;
+   }
+    ul{
+        margin-left: -15px;
+    }
+    .fa-phone:before {
+        content: "\f095";
+    }
+    #top_btn{
+        position: fixed;
+        bottom: 20%;
+        left: 5%;
+        background: #ffffff;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        text-align: center;
+        display: none;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .top{
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        vertical-align: -webkit-baseline-middle;
+    }
+
+    strong{
+        cursor: pointer;
+        color: #f4623a;
+    }
+
+    @media (max-width:992px) {
+        strong{
+            cursor: auto;
+            color: #000000;
+        }
+    }

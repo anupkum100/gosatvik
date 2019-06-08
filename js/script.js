@@ -1,20 +1,14 @@
 
 $(document).ready(function () {
-    $('a[href*="#"]').on('click', function (e) {
+    $('.nav-link[href*="#"]').on('click', function (e) {
         e.preventDefault()
-            // $(".nav-item").removeClass('active');
-            // $(e.target).parent('.nav-item').addClass('active');
-
         if (window.innerWidth < 992) {
             $('.navbar-toggler').trigger('click');
         }
 
-        $('html, body').animate(
-            {
-                scrollTop: $($(this).attr('href')).offset().top - 100,
-            },
-            1000
-        )
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - ($(this).attr('id') === 'contact' ? 0 : 90)
+        }, 1000)
     })
 
     // Cache selectors
@@ -45,7 +39,42 @@ $(document).ready(function () {
         menuItems
             .parent().removeClass("active")
             .end().filter("[href='#" + id + "']").parent().addClass("active");
+
+        // show hide got to top btn
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+           $("#top_btn").show();
+          } else {
+            $("#top_btn").hide();
+          }
     });
+
+    // function to load low resolution image first and wait for high resolution image to get loaded and than replace
+    (() => {
+        'use strict';
+        // Page is loaded
+        const objects = document.getElementsByClassName('asyncImage');
+        Array.from(objects).map((item) => {
+            // Start loading image
+            const img = new Image();
+            img.src = item.dataset.src;
+            // Once image is loaded replace the src of the HTML element
+            img.onload = () => {
+                item.classList.remove('asyncImage');
+                return item.nodeName === 'IMG' ?
+                    item.src = item.dataset.src :
+                    item.style.backgroundImage = `url(${item.dataset.src})`;
+            };
+        });
+    })();
+
+
+    $("#visitus_btn").click(function () {
+        $('html,body').animate({ scrollTop: $(document).height() - $(window).height() }, 2000);
+    })
+
+    $("#top_btn").click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 2000);
+    })
 
 })
 
