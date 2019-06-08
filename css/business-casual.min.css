@@ -48,7 +48,7 @@ p {
 
 .site-heading .site-heading-lower {
 	font-size: 1rem;
-	font-weight: 100;
+	font-weight: bolder;
 	line-height: 2rem
 }
 
@@ -70,7 +70,7 @@ p {
 .section-heading .section-heading-lower {
 	display: block;
 	font-size: 3rem;
-	font-weight: 100
+	font-weight: 300
 }
 
 .bg-faded {
@@ -375,4 +375,8 @@ p {
             cursor: auto;
             color: #000000;
         }
+    }
+
+    .section-heading-lower-2{
+        font-size: 2rem;
     }
