@@ -98,7 +98,8 @@ p {
 
 #mainNav .navbar-brand {
     color: #e6a756;
-    margin: auto
+	margin: auto;
+	padding-left: 60px
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
