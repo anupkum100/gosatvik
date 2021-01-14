@@ -19,6 +19,7 @@
     font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 23, 15, .65)));
 	background: linear-gradient(rgba(47, 23, 15, .65));
+	background: linear-gradient(90deg, #65a7fd, transparent,#4aff1e);
 	background-attachment: fixed;
 	background-position: center;
     background-size: cover;
@@ -88,7 +89,8 @@ p {
 }
 
 #mainNav {
-    background-color: rgba(47, 23, 15);
+	background:  #012056;
+    /* background-color: rgba(47, 23, 15); */
     font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     position: fixed;
     width: 100%;
@@ -97,7 +99,7 @@ p {
 }
 
 #mainNav .navbar-brand {
-    color: #e6a756;
+    color: #84ff65;
 	margin: auto;
 	padding-left: 60px
 }
@@ -108,7 +110,7 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-	color: #e6a756
+	color: #84ff65
 }
 
 @media (min-width:992px) {
@@ -119,7 +121,7 @@ p {
 		color: rgba(255, 255, 255, .4)
 	}
 	#mainNav .navbar-nav .nav-item.active .nav-link:hover {
-		color: #e6a756
+		color: #84ff65
 	}
 }
 
@@ -169,7 +171,7 @@ p {
 .cta {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	background-color: rgba(230, 167, 86, .9)
+	/* background-color: rgba(230, 167, 86, .9) */
 }
 
 .cta .cta-inner {
@@ -234,7 +236,7 @@ p {
 
 .list-hours .list-hours-item.today {
 	font-weight: 700;
-	color: #e6a756
+	color: #84ff65
 }
 
 @media (min-width:992px) {
@@ -263,11 +265,11 @@ p {
 }
 
 .text-primary {
-	color: #e6a756!important
+	color: #84ff65!important
 }
 
 .bg-primary {
-	background-color: #e6a756!important
+	background-color: #84ff65!important
 }
 
 .btn {
@@ -276,8 +278,8 @@ p {
 }
 
 .btn-primary {
-	background-color: #e6a756;
-	border-color: #e6a756
+	background-color: #84ff65;
+	border-color: #84ff65
 }
 
 .btn-primary:active,
@@ -348,9 +350,8 @@ p {
   .logo{
     position: absolute;
     top: 0px;
-    max-width: 140px;
+    max-width: 200px;
     width: 14%;
-    left: 5px;
    }
     ul{
         margin-left: -15px;
@@ -395,14 +396,8 @@ p {
 
     .section-heading-lower-2{
         font-size: 2rem;
-    }
-
-    /* .font-satvik{
-        font-family: satvikMainFont !important;
-        letter-spacing: 2px;
-    }
-
-    .font-satvik-secondary{
-        font-family: satvikSecondaryFont !important;
-        letter-spacing: 2px;
-    } */
+	}
+	
+	h1 .font-satvik, .font-satvik-secondary{
+		color: #012056;
+	}
