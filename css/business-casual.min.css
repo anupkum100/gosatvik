@@ -159,7 +159,7 @@ p {
         max-width: 40px;
         position: absolute;
         width: 10%;
-    }
+	}
 }
 
 @media (min-width:1200px) {
@@ -401,3 +401,25 @@ p {
 	h1 .font-satvik, .font-satvik-secondary{
 		color: #012056;
 	}
+
+	.whatsapp{
+		position: fixed;
+		height: 5rem;
+		bottom: 2rem;
+		left: 2rem;
+		z-index: 999;
+		transition: 1.5s ease-out;
+	}
+	.whatsapp:hover{
+		left: 3rem;
+		bottom: 3rem;
+		transform: scale(1.3);
+		transition: 1s ease-in;
+	}
+	@media (max-width:992px) {
+        .whatsapp{
+			height: 3rem;
+			bottom: .5rem;
+			left: .5rem;
+		}
+    }
