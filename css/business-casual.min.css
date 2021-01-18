@@ -299,7 +299,7 @@ p {
 
 /* custom css for delivery section starts*/
 .delivery {
-    background-image: url('http://www.pngmart.com/files/5/City-PNG-Pic.png');
+    background-image: url('../img/city.png');
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 8rem;
