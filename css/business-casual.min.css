@@ -416,10 +416,22 @@ p {
 		transform: scale(1.3);
 		transition: 1s ease-in;
 	}
+	.whatsapp_web{
+		display: block;
+	}
+	.whatsapp_mobile{
+		display: none;
+	}
 	@media (max-width:992px) {
         .whatsapp{
 			height: 3rem;
 			bottom: .5rem;
 			left: .5rem;
+		}
+		.whatsapp_web{
+			display: none;
+		}
+		.whatsapp_mobile{
+			display: block;
 		}
     }
