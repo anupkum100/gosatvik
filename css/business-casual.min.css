@@ -140,13 +140,13 @@ p {
 
 @media (min-width:992px) {
 	.intro .intro-img {
-		width: 75%;
+		width: 60%;
 		float: right
 	}
 	.intro .intro-text {
 		left: 0;
 		width: 60%;
-		margin-top: 3rem;
+		margin-top: 10rem;
 		position: absolute
 	}
 	.intro .intro-text .intro-button {
